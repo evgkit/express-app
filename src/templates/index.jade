@@ -1,7 +1,125 @@
-doctype html
-html(lang="ru")
-    head
-        title Landing Page
-    body
-        h1 Migas
-        p Migas letterpress craft beer umami, ethical meggings sriracha 90's hella put a bird on it locavore keffiyeh chia. Blog whatever bushwick, sriracha green juice scenester 90's VHS brooklyn skateboard brunch yr. Mustache intelligentsia marfa paleo irony, kogi leggings cornhole crucifix before they sold out sriracha. Ugh leggings banh mi fixie beard fap. Waistcoat gochujang bicycle rights marfa, tilde chartreuse austin thundercats small batch viral. Dreamcatcher lomo squid, salvia offal cray deep v cred semiotics scenester chicharrones bushwick gochujang. Leggings selfies biodiesel seitan poutine microdosing, quinoa shabby chic vegan post-ironic.
+extends ./layout.jade
+
+block content
+    header
+        .header-content
+            .header-content-inner
+                h1 Gentrify.
+                hr
+                p
+                    | Gentrify etsy freegan wolf, four dollar toast PBR&B hella VHS marfa gastropub yuccie helvetica paleo. Godard poutine chicharrones, asymmetrical blog photo booth meditation deep v synth. Cred letterpress before they sold out blue bottle taxidermy blog, raw denim VHS tumblr butcher thundercats four loko bitters health goth food truck. Slow-carb yuccie dreamcatcher letterpress photo booth before they sold out polaroid kickstarter, typewriter wayfarers master cleanse williamsburg fap. Bushwick tacos keytar hella celiac chambray. Before they sold out hoodie echo park paleo. Wolf deep v bicycle rights ugh helvetica waistcoat neutra fap iPhone irony.
+                a.btn.btn-primary.btn-xl.page-scroll(href='#about') Sign up now!
+    section#about.bg-primary
+        .container
+            .row
+                .col-lg-8.col-lg-offset-2.text-center
+                    h2.section-heading Unleash the competitor.
+                    hr.light
+                    p.text-faded
+                        | Labore XOXO kogi, laborum tousled assumenda sriracha before they sold out. Labore mlkshk Helvetica Marfa health goth Austin magna sunt, yr aesthetic artisan heirloom chillwave commodo lo-fi.
+                    a.btn.btn-default.btn-xl(href='#') Get Started!
+    section#services
+        .container
+            .row
+                .col-lg-12.text-center
+                    h2.section-heading Powerful tech, at your finger tips.
+                    hr.primary
+        .container
+            .row
+                .col-lg-3.col-md-6.text-center
+                    .service-box
+                        i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
+                        h3 Easy Logging
+                        p.text-muted Easily input your workout data, straight from your mobile device.
+                .col-lg-3.col-md-6.text-center
+                    .service-box
+                        i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary(data-wow-delay='.1s')
+                        h3 Predictive Analytics
+                        p.text-muted Custom analytics, just for you. Analyze past results, predict future performance.
+                .col-lg-3.col-md-6.text-center
+                    .service-box
+                        i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary(data-wow-delay='.2s')
+                        h3 Access Anywhere
+                        p.text-muted Your next workout is waiting. Set goals, and access metrics right from the gym.
+                .col-lg-3.col-md-6.text-center
+                    .service-box
+                        i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary(data-wow-delay='.3s')
+                        h3 Safe and Secure
+                        p.text-muted We protect your data with the utmost integrity. Your privacy is our priority.
+    aside.bg-dark
+        .container.text-center
+            .call-to-action
+                h2 Intelligentsia tattooed locavore meditation!
+                a.btn.btn-default.btn-xl.wow.tada(href='#') Start your free trial!
+    section#portfolio.no-padding
+        .container-fluid
+            .row.no-gutter
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/1.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Tumblr williamsburg organic
+                                .project-name
+                                    | Marge Simpson
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/2.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Photo booth kickstarter
+                                .project-name
+                                    | Jack Johnson
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/3.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Sriracha microdosing
+                                .project-name
+                                    | Reda Niman
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/4.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Tumblr williamsburg organic
+                                .project-name
+                                    | Magnus Jorgenson
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/5.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Tousled chia salvia
+                                .project-name
+                                    | Liz Vasques
+                .col-lg-4.col-sm-6
+                    a.portfolio-box(href='#')
+                        img.img-responsive(src='/static/img/portfolio/6.jpg', alt='')
+                        .portfolio-box-caption
+                            .portfolio-box-caption-content
+                                .project-category.text-faded
+                                    | Sriracha microdosing
+                                .project-name
+                                    | Fit Fittington
+    section#contact
+        .container
+            .row
+                .col-lg-8.col-lg-offset-2.text-center
+                    h2.section-heading Who we are
+                    hr.primary
+                    p
+                        | Taxidermy dreamcatcher trust fund master cleanse mlkshk. Squid tumblr chambray cardigan, wayfarers food truck stumptown sustainable tofu migas celiac williamsburg godard hashtag iPhone. Taxidermy pug direct trade chia. Quinoa bitters mixtape flannel pickled ugh. Polaroid literally occupy, kickstarter migas portland meditation master cleanse hella yuccie poutine retro. Brooklyn literally paleo, four loko lumbersexual trust fund meditation. Hammock post-ironic farm-to-table, shoreditch blue bottle XOXO 8-bit yuccie synth chillwave asymmetrical migas.
+                .col-lg-4.col-lg-offset-2.text-center
+                    i.fa.fa-phone.fa-3x.wow.bounceIn
+                    p 800-400-60-44
+                .col-lg-4.text-center
+                    i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+                    p
+                        a(href='mailto:foo@bar.com') Email your mate!
