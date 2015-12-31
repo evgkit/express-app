@@ -6,11 +6,20 @@ var express = require('express'),
 var app = express();
 
 app.get('/', function(req, res) {
-    res.send('Wow! It\'s get working!');
+    res.send('<h1>Wow! Express JS is working!</h1>');
 });
 
-app.get('/blog', function(req, res) {
-    res.send(posts);
+app.get('/blog/:title?', function(req, res) {
+    var title = req.params.title,
+        post = posts[title];
+
+    if (undefined !== title) {
+        res.send(post);
+    } else {
+        res.status(503);
+        res.send('<p>Halt! Page is under construction</p>');
+    }
+
 });
 
 app.listen(3000, function() {
