@@ -1,9 +1,17 @@
 'use strict';
 
 var express = require('express'),
-    posts   = require('./mock/posts.json');
+    posts   = require('./mock/posts.json'),
+    postLists = Object.keys(posts).map(function(value) {
+        return posts[value]
+    });
+
+//var postLists = posts;
 
 var app = express();
+
+app.use('/static', express.static(__dirname + '/public'));
+
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/templates');
 
@@ -19,7 +27,7 @@ app.get('/blog/:title?', function(req, res) {
         res.render('post', {post: post});
     } else {
         res.status(503);
-        res.send('<p>Halt! Page is under construction</p>');
+        res.render('blog', {posts: postLists});
     }
 });
 
